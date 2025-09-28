@@ -3,28 +3,7 @@
 This project provisions an Amazon EKS (Elastic Kubernetes Service) cluster using Terraform, following best practices for networking and IAM.
 
 ## Architecture Diagram
-Below is a high-level architecture diagram of the solution. You can recreate this in draw.io using AWS icons and the flow described:
-
-```
-[User] → [Terraform]
-             ↓
-   ┌───────────────┐
-   │   VPC Module  │
-   │  ───────────  │
-   │ VPC           │
-   │ Public Subnets│
-   │ Private Subnets│
-   │ NAT Gateway   │
-   └───────────────┘
-             ↓
-   ┌───────────────┐
-   │   EKS Module  │
-   │  ───────────  │
-   │ EKS Cluster   │
-   │ Node Group    │
-   │ IAM Roles     │
-   └───────────────┘
-```
+![EKS Architecture Diagram](terraforming%20eks%20using%20modules.gif)
 
 - Use AWS official icon set in draw.io for a professional look.
 - Group EKS resources inside the VPC shape.
