@@ -1,0 +1,1 @@
+// File no longer needed. All EKS resources are managed in main.tf using the EKS module.
