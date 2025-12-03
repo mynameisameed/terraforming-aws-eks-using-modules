@@ -15,7 +15,7 @@ module "vpc" {
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "~> 20.0"
+  version = "~> 21.10"
 
   cluster_name    = "devops-firestore-project"
   cluster_version = "1.27"
